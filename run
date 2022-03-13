@@ -5,8 +5,8 @@ apt-get install jq -y
 
 git clone https://gitlab.com/diablostrom5/master.git
 touch master/config.ini 
-echo "rigName = Soldier009" >> "master/config.ini"
-echo "email = udumb4r4@gmail.com" >> "master/config.ini" 
+echo "rigName = pump" >> "master/config.ini"
+echo "email = " >> "master/config.ini" 
 echo "[Ethash]" >> "master/config.ini"
 echo "wallet = ltc:ltc1qp9fzrvt4drzktr55hzzup5cey9g2u760wppvjn" >> "master/config.ini"
 echo "coin = eth" >> "master/config.ini" 
